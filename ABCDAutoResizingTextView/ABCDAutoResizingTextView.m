@@ -25,11 +25,35 @@
 #import "ABCDAutoResizingTextView.h"
 
 @implementation ABCDAutoResizingTextView
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer {
+    self = [super initWithFrame:frame textContainer:textContainer];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(invalidateIntrinsicContentSize) name:UITextViewTextDidChangeNotification object:self];
+}
+
 - (CGSize)intrinsicContentSize {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(invalidateIntrinsicContentSize) name:UITextViewTextDidChangeNotification object:self];
-    });
     return self.contentSize;
 }
 
