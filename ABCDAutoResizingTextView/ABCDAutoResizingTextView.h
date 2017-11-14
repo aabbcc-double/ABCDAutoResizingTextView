@@ -37,6 +37,12 @@ IB_DESIGNABLE
  Default value: NO
  */
 @property (nonatomic) IBInspectable BOOL automaticallyScrollSuperview;
+/**
+ Minimum height when there's no content
+ 
+ 0 - means, calculate from current font 
+ */
+@property (nonatomic) IBInspectable CGFloat minHeight;
 @end
 
 NS_ASSUME_NONNULL_END

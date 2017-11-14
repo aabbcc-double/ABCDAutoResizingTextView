@@ -50,6 +50,7 @@
 }
 
 - (void)commonInit {
+    _minHeight = 0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange) name:UITextViewTextDidChangeNotification object:self];
 }
 
@@ -78,6 +79,11 @@
     CGSize size = self.contentSize;
     size.width += self.contentInset.left + self.contentInset.right;
     size.height += self.contentInset.top + self.contentInset.bottom;
+    
+    
+    CGFloat minHeight = self.minHeight ?: self.font.lineHeight;
+    size.height = MAX(minHeight + self.textContainerInset.top + self.textContainerInset.bottom, size.height);
+
     return size;
 }
 
