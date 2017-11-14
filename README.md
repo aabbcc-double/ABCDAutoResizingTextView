@@ -1,6 +1,6 @@
 # ABCDAutoResizingTextView
 
-<img src="https://i.imgur.com/S1QT9Ng.gifv" height="300">
+<img src="https://i.imgur.com/S1QT9Ng.gif" height="500">
 
 # Installing
 ## Carthage
