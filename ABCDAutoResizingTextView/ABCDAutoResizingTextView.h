@@ -31,6 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
 @interface ABCDAutoResizingTextView : UITextView
+/**
+ Automatically scrolls the superview when changed iff it's a kind of UIScrollView.
+ 
+ Default value: NO
+ */
+@property (nonatomic) IBInspectable BOOL automaticallyScrollSuperview;
 @end
 
 NS_ASSUME_NONNULL_END

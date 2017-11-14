@@ -50,11 +50,35 @@
 }
 
 - (void)commonInit {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(invalidateIntrinsicContentSize) name:UITextViewTextDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange) name:UITextViewTextDidChangeNotification object:self];
+}
+
+- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated {
+    /* no - op */
+}
+
+- (void)textDidChange {
+    [self invalidateIntrinsicContentSize];
+    self.contentOffset = CGPointZero;
+    
+    if (self.automaticallyScrollSuperview) {
+        UIScrollView *scrollView;
+        if (![self.superview isKindOfClass:[UIScrollView class]]) {
+            return;
+        }
+        scrollView = (UIScrollView *)self.superview;
+        
+        CGRect rect = [self caretRectForPosition:self.selectedTextRange.start];
+        rect = [scrollView convertRect:rect fromView:self];
+        [scrollView scrollRectToVisible:rect animated:YES];
+    }
 }
 
 - (CGSize)intrinsicContentSize {
-    return self.contentSize;
+    CGSize size = self.contentSize;
+    size.width += self.contentInset.left + self.contentInset.right;
+    size.height += self.contentInset.top + self.contentInset.bottom;
+    return size;
 }
 
 - (void)prepareForInterfaceBuilder {

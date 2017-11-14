@@ -24,5 +24,19 @@
 
 #import "ViewController.h"
 
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@end
+
 @implementation ViewController
+- (void)viewDidLoad {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardDidChangeFrameNotification object:nil];
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification {
+    CGRect frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    CGFloat delta = CGRectGetMaxY(self.view.frame) - CGRectGetMinY(frame);
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, delta, 0);
+}
 @end
