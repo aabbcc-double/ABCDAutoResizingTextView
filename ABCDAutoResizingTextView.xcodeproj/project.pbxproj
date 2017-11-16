@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7D17621FBE1B18009E8509 /* test_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7D17611FBE1B18009E8509 /* test_appUITests.m */; };
 		BAC2BA8A1FBB0FED00E88FE9 /* ABCDAutoResizingTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC2BA881FBB0FED00E88FE9 /* ABCDAutoResizingTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAC2BA911FBB104700E88FE9 /* ABCDAutoResizingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC2BA901FBB104700E88FE9 /* ABCDAutoResizingTextView.m */; };
 		BAC2BA9A1FBB10CD00E88FE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC2BA991FBB10CD00E88FE9 /* AppDelegate.m */; };
@@ -20,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BA7D17641FBE1B18009E8509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC2BA7C1FBB0FED00E88FE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC2BA951FBB10CD00E88FE9;
+			remoteInfo = "test-app";
+		};
 		BAC2BAAE1FBB120200E88FE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAC2BA7C1FBB0FED00E88FE9 /* Project object */;
@@ -44,6 +52,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA7D175F1FBE1B17009E8509 /* test-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7D17611FBE1B18009E8509 /* test_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_appUITests.m; sourceTree = "<group>"; };
+		BA7D17631FBE1B18009E8509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC2BA851FBB0FED00E88FE9 /* ABCDAutoResizingTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABCDAutoResizingTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC2BA881FBB0FED00E88FE9 /* ABCDAutoResizingTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDAutoResizingTextView.h; sourceTree = "<group>"; };
 		BAC2BA891FBB0FED00E88FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA7D175C1FBE1B17009E8509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAC2BA811FBB0FED00E88FE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,11 +97,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7D17601FBE1B18009E8509 /* test-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D17611FBE1B18009E8509 /* test_appUITests.m */,
+				BA7D17631FBE1B18009E8509 /* Info.plist */,
+			);
+			path = "test-appUITests";
+			sourceTree = "<group>";
+		};
 		BAC2BA7B1FBB0FED00E88FE9 = {
 			isa = PBXGroup;
 			children = (
 				BAC2BA871FBB0FED00E88FE9 /* ABCDAutoResizingTextView */,
 				BAC2BA971FBB10CD00E88FE9 /* test-app */,
+				BA7D17601FBE1B18009E8509 /* test-appUITests */,
 				BAC2BA861FBB0FED00E88FE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +121,7 @@
 			children = (
 				BAC2BA851FBB0FED00E88FE9 /* ABCDAutoResizingTextView.framework */,
 				BAC2BA961FBB10CD00E88FE9 /* test-app.app */,
+				BA7D175F1FBE1B17009E8509 /* test-appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +166,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BA7D175E1FBE1B17009E8509 /* test-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7D17681FBE1B18009E8509 /* Build configuration list for PBXNativeTarget "test-appUITests" */;
+			buildPhases = (
+				BA7D175B1FBE1B17009E8509 /* Sources */,
+				BA7D175C1FBE1B17009E8509 /* Frameworks */,
+				BA7D175D1FBE1B17009E8509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA7D17651FBE1B18009E8509 /* PBXTargetDependency */,
+			);
+			name = "test-appUITests";
+			productName = "test-appUITests";
+			productReference = BA7D175F1FBE1B17009E8509 /* test-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BAC2BA841FBB0FED00E88FE9 /* ABCDAutoResizingTextView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAC2BA8D1FBB0FED00E88FE9 /* Build configuration list for PBXNativeTarget "ABCDAutoResizingTextView" */;
@@ -183,6 +230,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Shakhzod Ikromov";
 				TargetAttributes = {
+					BA7D175E1FBE1B17009E8509 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BAC2BA951FBB10CD00E88FE9;
+					};
 					BAC2BA841FBB0FED00E88FE9 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -208,11 +260,19 @@
 			targets = (
 				BAC2BA841FBB0FED00E88FE9 /* ABCDAutoResizingTextView */,
 				BAC2BA951FBB10CD00E88FE9 /* test-app */,
+				BA7D175E1FBE1B17009E8509 /* test-appUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA7D175D1FBE1B17009E8509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAC2BA831FBB0FED00E88FE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +293,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA7D175B1FBE1B17009E8509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7D17621FBE1B18009E8509 /* test_appUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAC2BA801FBB0FED00E88FE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +322,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BA7D17651FBE1B18009E8509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC2BA951FBB10CD00E88FE9 /* test-app */;
+			targetProxy = BA7D17641FBE1B18009E8509 /* PBXContainerItemProxy */;
+		};
 		BAC2BAAF1FBB120200E88FE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BAC2BA841FBB0FED00E88FE9 /* ABCDAutoResizingTextView */;
@@ -281,6 +354,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BA7D17661FBE1B18009E8509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "test-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbccdouble.test-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "test-app";
+			};
+			name = Debug;
+		};
+		BA7D17671FBE1B18009E8509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "test-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbccdouble.test-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "test-app";
+			};
+			name = Release;
+		};
 		BAC2BA8B1FBB0FED00E88FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,8 +538,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVZPUPLA8S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "test-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbccdouble.test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,8 +553,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVZPUPLA8S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "test-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbccdouble.test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,6 +566,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA7D17681FBE1B18009E8509 /* Build configuration list for PBXNativeTarget "test-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7D17661FBE1B18009E8509 /* Debug */,
+				BA7D17671FBE1B18009E8509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAC2BA7F1FBB0FED00E88FE9 /* Build configuration list for PBXProject "ABCDAutoResizingTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

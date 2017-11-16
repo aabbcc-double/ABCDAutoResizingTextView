@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BA7D175E1FBE1B17009E8509"
+               BuildableName = "test-appUITests.xctest"
+               BlueprintName = "test-appUITests"
+               ReferencedContainer = "container:ABCDAutoResizingTextView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BAC2BA841FBB0FED00E88FE9"
+            BuildableName = "ABCDAutoResizingTextView.framework"
+            BlueprintName = "ABCDAutoResizingTextView"
+            ReferencedContainer = "container:ABCDAutoResizingTextView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
