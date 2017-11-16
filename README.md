@@ -1,4 +1,5 @@
-# ABCDAutoResizingTextView
+# ABCDAutoResizingTextView 
+[![Build Status](https://www.bitrise.io/app/663a72b7cbc660e1/status.svg?token=8YsBzLAxen9prMSRmCA6Qg&branch=master)](https://www.bitrise.io/app/663a72b7cbc660e1)
 
 <img src="https://i.imgur.com/Ne0VFP7.gif">
 
