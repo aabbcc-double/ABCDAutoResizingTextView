@@ -1,5 +1,5 @@
 # ABCDAutoResizingTextView 
-[![Build Status](https://www.bitrise.io/app/663a72b7cbc660e1/status.svg?token=8YsBzLAxen9prMSRmCA6Qg&branch=master)](https://www.bitrise.io/app/663a72b7cbc660e1)
+[![Build Status](https://travis-ci.org/aabbcc-double/ABCDAutoResizingTextView.svg?branch=master)](https://travis-ci.org/aabbcc-double/ABCDAutoResizingTextView)
 
 <img src="https://i.imgur.com/Ne0VFP7.gif">
 
