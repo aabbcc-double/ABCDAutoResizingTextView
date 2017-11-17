@@ -1,5 +1,6 @@
 # ABCDAutoResizingTextView 
 [![Build Status](https://travis-ci.org/aabbcc-double/ABCDAutoResizingTextView.svg?branch=master)](https://travis-ci.org/aabbcc-double/ABCDAutoResizingTextView)
+[![Codecov](https://img.shields.io/codecov/c/github/aabbcc-double/ABCDAutoResizingTextView.svg)]()
 
 <img src="https://i.imgur.com/Ne0VFP7.gif">
 
