@@ -5,4 +5,5 @@ osx_image: xcode9.1
 
 script: 
   - xcodebuild
-  - xcodebuild test -scheme ABCDAutoResizingTextView -configuration Debug -destination "platform=iOS Simulator,name=iPhone SE"
+  - xcodebuild test -scheme ABCDAutoResizingTextView -enableCodeCoverage YES -configuration Debug -destination "platform=iOS Simulator,name=iPhone SE" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - bash <(curl -s https://codecov.io/bash)
